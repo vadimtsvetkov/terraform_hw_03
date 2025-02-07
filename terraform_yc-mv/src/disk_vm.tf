@@ -18,7 +18,7 @@ resource "yandex_compute_instance" "storage" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd8aphn6s5hrmjaa3qas" # Ubuntu 20.04 LTS
+      image_id = data.yandex_compute_image.ubuntu.image_id # Ubuntu 20.04 LTS
       size     = 10                     # Размер системного диска в ГБ
     }
   }

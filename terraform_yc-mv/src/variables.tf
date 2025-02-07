@@ -30,3 +30,8 @@ variable "vpc_name" {
   default     = "develop"
   description = "VPC network&subnet name"
 }
+
+variable "vm_web_family" {
+  type = string
+  default = "ubuntu-2004-lts"
+}
